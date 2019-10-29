@@ -8,13 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="课堂笔记1028pm.md 10/28/20191 / 2 JSP 一、JSP九大内置对象 （一）Request：客户端与服务器的一次请求中封装了用户提交的信息（包裹），该对象可以设置请求转发request.getRequestDispatcher(String URL).forward(request,response)，是服务器行为，是一次请求，所以页面的URL为原始请求处理的响应页面的URL">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/10/11/10.28/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="课堂笔记1028pm.md 10/28/20191 / 2 JSP 一、JSP九大内置对象 （一）Request：客户端与服务器的一次请求中封装了用户提交的信息（包裹），该对象可以设置请求转发request.getRequestDispatcher(String URL).forward(request,response)，是服务器行为，是一次请求，所以页面的URL为原始请求处理的响应页面的URL">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-10-29T08:21:38.412Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="课堂笔记1028pm.md 10/28/20191 / 2 JSP 一、JSP九大内置对象 （一）Request：客户端与服务器的一次请求中封装了用户提交的信息（包裹），该对象可以设置请求转发request.getRequestDispatcher(String URL).forward(request,response)，是服务器行为，是一次请求，所以页面的URL为原始请求处理的响应页面的URL">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,176 +154,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-10.21" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>课堂笔记1021.md 10/21/2019</p>
-<h1 id="1-2"><a href="#1-2" class="headerlink" title="1 / 2"></a>1 / 2</h1><ul>
-<li><p>前端开发：HTML、CSS、JS(JavaScript)</p>
-</li>
-<li><p>企业中前端工程师：使用前端框架(BootStrap/easyUI/VUE/Angular)开发。</p>
-</li>
-<li><p>后端开发：JavaSE、JSP、JavaWeb(良好的稳定性、健壮性优于其它语言。企业级应用首选之一)</p>
-</li>
-<li><p>企业中的后端工程师：使用后端框架(SpringMVC/Struts2、Spring、myBatis)开发。</p>
-</li>
-<li><p>全栈工程师：C语言:工业控制、嵌入式设备(电磁炉、吸尘器、微波炉。。。)</p>
-<h1 id="jsp梳理回顾"><a href="#jsp梳理回顾" class="headerlink" title="jsp梳理回顾"></a>jsp梳理回顾</h1></li>
-<li><p>JSP项目是在后台开发框架成熟前使用较多的一种JavaWeb技术，后期会逐渐过度到后台框架。 </p>
-</li>
-<li><p>jvm只能处理</p>
-</li>
-<li><p>java编译的class文件。</p>
-</li>
-<li><p>JSP和后台框架</p>
-</li>
-<li><p>核心技术均为Servlet Servlet在jdk中的包为：javax.servlet.http.HttpServlet。</p>
-<h1 id="Servlet梳理回顾"><a href="#Servlet梳理回顾" class="headerlink" title="Servlet梳理回顾"></a>Servlet梳理回顾</h1></li>
-<li><p>1.jsp和servlet的区别和联系： 1). jsp经编译后就变成了Servlet. (JSP的本质就是Servlet，JVM只能识别java的类(.class)，不能识别JSP的代码,Web容器将JSP的代码编译成JVM能够识别的java类) 2).jsp更擅长表现于页面显示,servlet更擅长于逻辑控制. 3).Servlet中没有内置对象，Jsp中的内置对象都是必须通过HttpServletRequest对象，HttpServletResponse对象以及HttpServlet对象得到. Jsp是Servlet的一种简化，使用Jsp只需要完成程序员需要输出到客户端的内容，Jsp中的Java脚本如何镶嵌到一个类中，由Jsp容器完成。 而Servlet则是个完整的Java类，这个类的Service方法用于生成对客户端的响应。</p>
-</li>
-<li><p>2.联系：<br>JSP是Servlet技术的扩展，本质上就是Servlet的简易方式。JSP编译后是“类servlet”。<br>Servlet和JSP最主要的不同点在于：<br>Servlet的应用逻辑是在Java文件中，并且完全从表示层中的HTML里分离开来。（jsp里面是有html标签，servlet没有html标签）而JSP的情况是Java和HTML可以组合成一个扩展名为.jsp的文件。(JSP=java类+HTML)JSP侧重于视图，Servlet主要用于控制逻辑。(JSP不能脱离Servlet，Servelet可独立存在)Servlet更多的是类似于一个Controller，用来做控制。</p>
-<h1 id="servlet类中的方法"><a href="#servlet类中的方法" class="headerlink" title="servlet类中的方法"></a>servlet类中的方法</h1></li>
-<li><p>servlet中的方法</p>
-</li>
-<li><p>doGet()方法：用get方式传输网络数据 get方式：明文传参(地址栏显示)、传输数据较小</p>
-</li>
-<li><p>doPost()方法：用post方式传输网络数据 post方式：暗文传参(地址栏不显示)、传输数据较大</p>
-</li>
-</ul>
-<h1 id="页面跳转方式"><a href="#页面跳转方式" class="headerlink" title="页面跳转方式"></a>页面跳转方式</h1><ul>
-<li>页面跳转的方式分类：</li>
-</ul>
-<p>1.转发：foward(地址栏URL不变)<br>request.getRequestDispatcher(“hello.jsp”).forward(request，response);//页面转发<br>2.重定向：redirect(地址栏URL变化)<br>response.sendRedirect(“资源的URL”);<br>3.两种跳转方式异同：</p>
-<ul>
-<li>转发使用的是getRequestDispatcher()方法;重定向使用的是sendRedirect();</li>
-<li>转发：浏览器URL的地址栏不变。重定向：浏览器URL的地址栏改变；</li>
-<li>转发是服务器行为，重定向是客户端行为；</li>
-<li>转发是浏览器只做了一次访问请求。重定向是浏览器做了至少两次的访问请求；</li>
-<li>转发2次跳转之间传输的信息不会丢失，重定向2次跳转之间传输的信息会丢失（request范围）。</li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/29/10.21/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-10.29." class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>课堂笔记1029.md 10/29/2019<br> 1 / 1 总结回顾</p>
-<h1 id="JSP-Servlet的区别"><a href="#JSP-Servlet的区别" class="headerlink" title="JSP/Servlet的区别:"></a>JSP/Servlet的区别:</h1><ul>
-<li>一、相同点：</li>
-</ul>
-<p>1.处理后台逻辑，作为mvc控制；<br>2.9个内置对象(request、response、session、application、page、out、config、pageContext、exception)</p>
-<p>3.都可用Java语言。</p>
-<p>4.内置对象作用域：page &lt; request/response &lt; session &lt; application。</p>
-<p>page.setAttribute(“username”,”sam”);<br>String id = page.getAttribute(“username”);<br>request.setAttribute(“username”,”sam”); </p>
-<p>String id = request.getAttribute(“username”);<br>session.setAttribute(“username”,”sam”); </p>
-<p>String id = session.getAttribute(“username”);<br>application.setAttribute(“username”,”sam”); </p>
-<p>String id = application.getAttribute(“username”);</p>
-<ul>
-<li>二、不同点：</li>
-</ul>
-<p>1.JSP可作为前端显示页面，Servlet只能作后台控制；<br>2. JSP可内嵌html、EL、JSTL和Java，而Servlet只能有<br>Java；<br>3. JSP控制不需要项目中去注册、而Servlet必须注册(web.xml/注解)<br>4. JSP常作为小型项目，Servlet常用作框架类的大型项目；</p>
-<h1 id="本堂课程知识要点"><a href="#本堂课程知识要点" class="headerlink" title="本堂课程知识要点"></a>本堂课程知识要点</h1><p>页面跳转 JSP Servlet</p>
-<ul>
-<li><p>Jsp-Servlet常见两种页面间传递数据方式(request转发和session)</p>
-</li>
-<li><p>页面间传递数据方式：就是使用JSP页面的九大内置对象：域对象。<br>【request、response、session、application、out、pagecontext、config、page、exception】===和servlet的servletContext对象区别。两码事。</p>
-</li>
-<li><p>①request转发（麻烦）：一次request转发只适合，两个页面间传值。俗称：一次request转发 ：【一个转发链】<br>===非相邻页面间传递数据：必须使用【转发链条】才能保证数据不丢失！（已测）：不断转发：request.getAttribute(“name”); request.setAttribute(“name”,Object value);<br>====中间出现地址栏<a href="url "></a>一类的 get请求或其他方式的请求，数据就会 丢失。</p>
-</li>
-<li><p>②session（推荐）：使用session比较简单。在小项目，需要创建的session不多，服务器压力不大时，平时推荐用session。除非特殊需求。<br>===任意位置间传递数据：session.setAttribute(“name”,Object value); session.getAttribute(“name”);</p>
-</li>
-</ul>
-<ul>
-<li>拓展：<br>Spring、SpringMVC(Struts2.0)、MyBatis SSM<br>SpringBoot SpringCloud</li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/29/10.29./">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-10.28" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-10.28" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
     <div class="article-entry" itemprop="articleBody">
@@ -362,6 +197,27 @@
       
 
       
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
     </div>
     <div class="article-info article-info-index">
       
@@ -369,16 +225,79 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/11/10.28/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/11/10.28/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2019/10/29/10.29./" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -398,8 +317,14 @@
 
 
 
+  
+  
+  
 
   
+
+  
+
   
 
 
@@ -422,8 +347,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
